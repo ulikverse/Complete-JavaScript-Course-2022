@@ -35,8 +35,20 @@ Test data:
 GOOD LUCK 😀
 */
 
-let marksMass = 78;
-let johnsMass = 92;
+// const marksMass = 78;
+// const johnsMass = 92;
 
-let marksHeight = 1.69;
-let johnsHeight = 1.95;
+const marksMass = 95;
+const johnsMass = 85;
+
+// const marksHeight = 1.69;
+// const johnsHeight = 1.95;
+
+const marksHeight = 1.88;
+const johnsHeight = 1.76;
+
+const marksBMI = marksMass / (marksHeight * marksHeight);
+const johnsBMI = johnsMass / (johnsHeight * johnsHeight);
+const markHigherBMI = marksBMI > johnsBMI;
+
+console.log(marksBMI, johnsBMI, markHigherBMI);
