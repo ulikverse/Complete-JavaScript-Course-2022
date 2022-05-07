@@ -69,7 +69,7 @@ Your tasks:
 Hint: Use an if/else statement 😉 
 
 GOOD LUCK 😀
-*/
+
 
 // const marksMass = 78;
 // const johnsMass = 92;
@@ -91,3 +91,5 @@ if (marksBMI > johnsBMI) {
 } else {
   console.log(`John's BMI (${johnsBMI}) is higher than Mark's (${marksBMI})!`);
 }
+
+*/
