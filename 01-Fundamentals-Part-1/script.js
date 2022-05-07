@@ -128,7 +128,8 @@ multiple
 lines`);
 
 
-const age = 15;
+
+const age = 5;
 
 if (age >= 18) {
   console.log("Sarah can start driving licence 🚗");
@@ -137,7 +138,7 @@ if (age >= 18) {
   console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
 }
 
-const birthYear = 1998;
+const birthYear = 2013;
 
 let century;
 if (birthYear <= 2000) {
