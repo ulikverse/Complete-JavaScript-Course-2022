@@ -192,6 +192,7 @@ if (height) {
 }
 
 
+
 const age = "18";
 if (age === 18) console.log("Congratulations, you are adult! (strict)");
 
@@ -214,8 +215,6 @@ if (favorite === 23) {
 
 if (favorite !== 23) console.log("Why not 23?");
 
-*/
-
 const hasDriversLicence = true; // A
 const hasGoodVision = true; // B
 
@@ -237,3 +236,5 @@ if (hasDriversLicence && hasGoodVision && !isTired) {
 } else {
   console.log("Someone else should drive...");
 }
+
+*/
