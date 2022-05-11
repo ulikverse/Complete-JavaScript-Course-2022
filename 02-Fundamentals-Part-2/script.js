@@ -5,3 +5,6 @@ const passTest = true;
 
 if (passTest) hasDriversLicence = true;
 if (hasDriversLicence) console.log("I can drive :D");
+
+// const interface = "Audio";
+// const private = 534;
