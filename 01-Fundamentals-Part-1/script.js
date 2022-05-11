@@ -278,7 +278,7 @@ if (day === "monday") {
   console.log("Not a valid day");
 }
 
-*/
+
 
 const age = 23;
 // age >= 18;
@@ -297,3 +297,5 @@ if (age >= 18) {
 console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
+
+*/
