@@ -287,3 +287,21 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, totals);
 
 */
+
+// Array
+const jonasArray = [
+  "Jonas",
+  "Shmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+// Object - order of values does not matter when we want to retrieve them
+const jonas = {
+  firstname: "Jonas",
+  lastName: "Shmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
