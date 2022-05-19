@@ -349,3 +349,47 @@ const interestedIn = prompt(
       );
       
       */
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Shmedtmann",
+  birthYear: 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicence: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.age}-year old ${
+      jonas.job
+    } and he has ${this.hasDriversLicence ? "a" : "no"} driver's licence.`;
+  },
+};
+
+console.log(jonas.calcAge());
+
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+// Challenge
+// "Jonas is a 46-year old teacher and he has a driver's licence"
+
+console.log(jonas.getSummary());
+
+// console.log(
+//   `${jonas.firstName} is a ${jonas.age}-year old ${jonas.job} and he has a driver's licence`
+// );
