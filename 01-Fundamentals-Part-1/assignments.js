@@ -1,3 +1,10 @@
+// LECTURE Values and Variables
+let country = "Ukraine";
+let continent = "Europe";
+let population = 42000000;
+
+console.log(country, continent, population);
+
 /*
 
 const country = "Ukraine";
