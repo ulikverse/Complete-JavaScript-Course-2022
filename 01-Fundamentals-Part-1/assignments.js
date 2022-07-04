@@ -6,7 +6,9 @@ assign their values according to your own country (population in millions)
 */
 // let country = "Ukraine";
 // let continent = "Europe";
-let population = 42000000;
+const country = "Ukraine";
+const continent = "Europe";
+const population = 42000000;
 
 console.log(country, continent, population);
 
@@ -31,10 +33,38 @@ LECTURE: let, const and var
 */
 
 language = "Ukrainian";
-const country = "Ukraine";
-const continent = "Europe";
+// const country = "Ukraine";
+// const continent = "Europe";
 isIsland = true;
 
+/*
+LECTURE: Basic Operators 
+1. If your country split in half, and each half would contain half the population, 
+then how many people would live in each half? 
+2. Increase the population of your country by 1 and log the result to the console 
+3. Finland has a population of 6 million. Does your country have more people than 
+Finland? 
+4. The average population of a country is 33 million people. Does your country 
+have less people than the average country? 
+5. Based on the variables you created, create a new variable 'description' 
+which contains a string with this format: 'Portugal is in Europe, and its 11 million 
+people speak portuguese' 
+*/
+
+let halfPopulation = population / 2;
+console.log(halfPopulation);
+
+let populationPlusOne = population++;
+console.log(populationPlusOne);
+
+const Finland = 6000000;
+console.log(population > Finland);
+
+let averagePopulationOfCountry = 33000000;
+console.log(averagePopulationOfCountry > population);
+
+let description = country + ' is in' + " " + continent + ", and its " population + " million people speak " + language;
+console.log(description);
 /*
 const country = "Ukraine";
 const continent = "Europe";
