@@ -8,7 +8,7 @@ assign their values according to your own country (population in millions)
 // let continent = "Europe";
 const country = "Ukraine";
 const continent = "Europe";
-const population = 42000000;
+let population = 42000000;
 
 console.log(country, continent, population);
 
@@ -63,7 +63,7 @@ console.log(population > Finland);
 let averagePopulationOfCountry = 33000000;
 console.log(averagePopulationOfCountry > population);
 
-let description = country + ' is in' + " " + continent + ", and its " population + " million people speak " + language;
+let description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 console.log(description);
 /*
 const country = "Ukraine";
