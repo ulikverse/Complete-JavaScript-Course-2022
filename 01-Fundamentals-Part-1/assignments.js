@@ -6,10 +6,11 @@ assign their values according to your own country (population in millions)
 */
 // let country = "Ukraine";
 // let continent = "Europe";
-/*
 const country = "Ukraine";
 const continent = "Europe";
 let population = 42000000;
+let language = "ukrainian";
+/*
 
 console.log(country, continent, population);
 
@@ -47,8 +48,7 @@ Finland?
 4. The average population of a country is 33 million people. Does your country 
 have less people than the average country? 
 5. Based on the variables you created, create a new variable 'description' 
-which contains a string with this format: 'Portugal is in Europe, and its 11 million 
-people speak portuguese' 
+which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese' 
 
 let halfPopulation = population / 2;
 console.log(halfPopulation);
@@ -103,6 +103,15 @@ let johnHigherBMI = johnBMI > markBMI;
 
 console.log(markHigherBMI);
 */
+
+/*
+LECTURE: Strings and Template Literals 
+1. Recreate the 'description' variable from the last assignment, this time using the template literal syntax
+*/
+
+console.log(
+  `${country} is in ${continent}, and its ${population} million people speak ${language}`
+);
 
 /*
 -------------------------------------------------------------
