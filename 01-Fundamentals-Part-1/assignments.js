@@ -6,36 +6,36 @@ assign their values according to your own country (population in millions)
 */
 // let country = "Ukraine";
 // let continent = "Europe";
+/*
 const country = "Ukraine";
 const continent = "Europe";
 let population = 42000000;
 
 console.log(country, continent, population);
 
-/*
 LECTURE: Data Types 
 1. Declare a variable called 'isIsland' and set its value according to your 
 country. The variable should hold a Boolean value. Also declare a variable 
 'language', but don't assign it any value yet 
 2. Log the types of 'isIsland', 'population', 'country' and 'language' 
 to the console
-*/
 
 let isIsland = false;
 let language;
 console.log(typeof isIsland, population, country, language);
+*/
 
 /*
 LECTURE: let, const and var 
 1. Set the value of 'language' to the language spoken where you live (some countries have multiple languages, but just choose one) 
 2. Think about which variables should be const variables (which values will never change, and which might change?). Then, change these variables to const. 
 3. Try to change one of the changed variables now, and observe what happens 
-*/
 
 language = "Ukrainian";
 // const country = "Ukraine";
 // const continent = "Europe";
 isIsland = true;
+*/
 
 /*
 LECTURE: Basic Operators 
@@ -49,7 +49,6 @@ have less people than the average country?
 5. Based on the variables you created, create a new variable 'description' 
 which contains a string with this format: 'Portugal is in Europe, and its 11 million 
 people speak portuguese' 
-*/
 
 let halfPopulation = population / 2;
 console.log(halfPopulation);
@@ -65,7 +64,48 @@ console.log(averagePopulationOfCountry > population);
 
 let description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 console.log(description);
+*/
+
 /*
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: 
+
+BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter). 
+
+Your tasks: 
+1. Store Mark's and John's mass and height in variables 
+2. Calculate both their BMIs using the formula (you can even implement both 
+versions) 
+3. Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John. 
+Test data: 
+§ Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall. 
+§ Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall. 
+ 
+GOOD LUCK 😀
+*/
+
+// const markMass = 78;
+// const johnMass = 92;
+
+// const johnHeight = 1.95;
+// const markHeight = 1.69;
+
+const markMass = 95;
+const johnMass = 85;
+
+const johnHeight = 1.76;
+const markHeight = 1.88;
+
+const markBMI = markMass / markHeight ** 2;
+const johnBMI = johnMass / johnHeight ** 2;
+console.log(markBMI, johnBMI);
+
+let markHigherBMI = markBMI > johnBMI;
+let johnHigherBMI = johnBMI > markBMI;
+
+console.log(markHigherBMI);
+
+/*
+-------------------------------------------------------------
 const country = "Ukraine";
 const continent = "Europe";
 let population = 44.13 + " million people";
