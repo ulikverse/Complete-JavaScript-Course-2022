@@ -207,6 +207,28 @@ if (favorite === 23) {
 if (favorite !== 23) {
   console.log("Why not the 23?");
 }
+
+const hasDriversLicence = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicence && hasGoodVision);
+console.log(hasDriversLicence || hasGoodVision);
+console.log(!hasDriversLicence);
+
+// if (hasDriversLicence && hasGoodVision) {
+  //   console.log("Sarah is able to drive!");
+  // } else {
+    //   console.log("Someone else should drive");
+    // }
+    
+    const isTired = false; // C
+    console.log(hasDriversLicence && hasGoodVision && isTired);
+    
+    if (hasDriversLicence && hasGoodVision && !isTired) {
+      console.log("Sarah is able to drive!");
+    } else {
+      console.log("Someone else should drive");
+    }
 */
 
 /*
