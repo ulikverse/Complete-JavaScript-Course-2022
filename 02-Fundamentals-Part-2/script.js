@@ -1,4 +1,15 @@
 "use strict";
+/* 
+let hasDriversLicence = false;
+const passTest = true;
+
+if (passTest) hasDriversLicence = true;
+if (hasDriversLicence) console.log("I can drive :D");
+
+// const interface = "Audio";
+// const private = 534;
+// const if = 23;
+*/
 
 /*
 ------------------------------------------
@@ -578,7 +589,7 @@ if (mark.bmi > john.bmi) {
 
   GOOD LUCK 😀
 
-      */
+
 
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -597,3 +608,5 @@ for (let i = 0; i < bills.length; i++) {
 console.log(bills, tips, totals);
 
 const calcAverage = function (arr) {};
+
+*/
