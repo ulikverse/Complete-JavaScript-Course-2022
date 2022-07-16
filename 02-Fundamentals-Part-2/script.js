@@ -96,6 +96,21 @@ const popUkra = percentageOfWorld2(45);
 const popPola = percentageOfWorld2(38);
 const popChin = percentageOfWorld2(1441);
 console.log(popUkra, popPola, popChin);
+
+// Arrow function
+const caclAge3 = (birthYear) => 2037 - birthYear;
+const age3 = caclAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  // return retirement;
+  return `${firstName} retires in ${retirement} years.`;
+};
+
+console.log(yearsUntilRetirement(1991, "Jonas"));
+console.log(yearsUntilRetirement(1980, "Bob"));
 */
 
 /*
