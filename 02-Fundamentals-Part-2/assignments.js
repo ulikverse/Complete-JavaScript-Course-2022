@@ -3,13 +3,13 @@ LECTURE: Values and Variables
 1. Declare variables called 'country', 'continent' and 'population' and 
 assign their values according to your own country (population in millions) 
 2. Log their values to the console
-*/
 // let country = "Ukraine";
 // let continent = "Europe";
 const country = "Ukraine";
 const continent = "Europe";
 let population = 13000000;
 let language = "ukrainian";
+*/
 /*
 
 console.log(country, continent, population);

@@ -1,5 +1,17 @@
 "use strict";
+/* 
+let hasDriversLicence = false;
+const passTest = true;
 
+if (passTest) hasDriversLicence = true;
+if (hasDriversLicence) console.log("I can drive :D");
+
+// const interface = "Audio";
+// const private = 534;
+// const if = 23;
+*/
+
+/*
 function logger() {
   console.log("My name is Jonas");
 }
@@ -19,16 +31,26 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
-/* 
-let hasDriversLicence = false;
-const passTest = true;
+*/
 
-if (passTest) hasDriversLicence = true;
-if (hasDriversLicence) console.log("I can drive :D");
+/*
+LECTURE: Functions 
 
-// const interface = "Audio";
-// const private = 534;
-// const if = 23;
+1. Write a function called 'describeCountry' which takes three parameters: 'country', 'population' and 'capitalCity'. Based on this input, the function returns a string with this format: 'Finland has 6 million people and its 
+capital city is Helsinki' 
+
+2. Call this function 3 times, with input data for 3 different countries. Store the returned values in 3 different variables, and log them to the console
+
+
+function describeCountry(country, population, capitalCity) {
+  return `${country} has a ${population} million people and its capital city is ${capitalCity}`;
+}
+
+const logUkr = describeCountry("Ukraine", 42000000, "Kyiv");
+const logPol = describeCountry("Poland", 38000000, "Warszaw");
+const logEng = describeCountry("England", 55000000, "London");
+
+console.log(logUkr, logPol, logEng);
 */
 
 /*
