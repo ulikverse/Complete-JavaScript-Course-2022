@@ -114,6 +114,41 @@ console.log(yearsUntilRetirement(1980, "Bob"));
 */
 
 /*
+LECTURE: Arrow Functions
+
+1. Recreate the last assignment, but this time create an arrow function called 'percentageOfWorld3'
+
+// Function declaration
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+// Function expression
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+};
+
+// Arrow function
+const percentageOfWorld3 = (population) => {
+  return (population / 7900) * 100;
+};
+
+const popUkr = percentageOfWorld1(45);
+const popPol = percentageOfWorld1(38);
+const popChi = percentageOfWorld1(1441);
+console.log(popUkr, popPol, popChi);
+
+const popUkra = percentageOfWorld2(45);
+const popPola = percentageOfWorld2(38);
+const popChin = percentageOfWorld2(1441);
+console.log(popUkra, popPola, popChin);
+
+const popUkrai = percentageOfWorld3(45);
+const popPolan = percentageOfWorld3(38);
+const popChina = percentageOfWorld3(1441);
+console.log(popUkra, popPola, popChin);
+*/
+
+/*
 ------------------------------------------
 ------------------------------------------
 ------------------------------------------
