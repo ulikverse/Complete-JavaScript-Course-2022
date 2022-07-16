@@ -233,23 +233,29 @@ Hints:
  
 GOOD LUCK 😀
 
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-const calcAverage = (score1, score2, score3) => {
-  return (score1 + score2 + score3) / 3;
-};
+// // Test 1
+// const scoreKoalas = calcAverage(65, 54, 49);
+// const scoreDolhins = calcAverage(44, 23, 71);
+// // console.log(scoreKoalas, scoreDolhins);
 
-const avgKoalas = calcAverage(23, 34, 27);
-const avgDolhins = calcAverage(85, 54, 41);
-// console.log(avgKoalas, avgDolhins);
+// Test 2
+const scoreKoalas = calcAverage(23, 34, 27);
+const scoreDolhins = calcAverage(85, 54, 41);
+// console.log(scoreKoalas, scoreDolhins);
 
-const checkWinner = function (avgDolhins, avgKoalas) {
-  if (avgDolhins > avgKoalas) {
-    console.log(`Dolphins wins the Trophy 🏆 (${avgDolhins} vs. ${avgKoalas})`);
-  } else {
-    console.log(`Koalas wins the Trophy 🏆 (${avgKoalas} vs. ${avgDolhins})`);
-  }
-};
-
-checkWinner(avgDolhins, avgKoalas);
-
-*/
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(
+      `Dolphins wins the Trophy 🏆 (${avgDolphins} vs. ${avgKoalas})`
+      );
+    } else if (avgKoalas >= 2 * avgDolphins) {
+      console.log(`Koalas wins the Trophy 🏆 (${avgKoalas} vs. ${avgDolphins})`);
+    } else {
+      console.log("No team wins...");
+    }
+  };
+  
+  checkWinner(scoreDolhins, scoreKoalas);
+  */
