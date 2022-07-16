@@ -51,7 +51,6 @@ const logPol = describeCountry("Poland", 38000000, "Warszaw");
 const logEng = describeCountry("England", 55000000, "London");
 
 console.log(logUkr, logPol, logEng);
-*/
 
 // Function declaration
 function calcAge1(birthYear) {
@@ -67,6 +66,8 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(1991);
 console.log(age1, age2);
+*/
+
 /*
 ------------------------------------------
 ------------------------------------------
