@@ -437,3 +437,11 @@ console.log(total);
   //   `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
   // );
 */
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
