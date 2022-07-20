@@ -436,12 +436,35 @@ console.log(total);
 // console.log(
   //   `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
   // );
-*/
+  
+  const jonas = {
+    firstName: "Jonas",
+    lastName: "Schmedtmann",
+    age: 2037 - 1991,
+    job: "teacher",
+    friends: ["Michael", "Peter", "Steven"],
+  };
+  */
 
-const jonas = {
-  firstName: "Jonas",
-  lastName: "Schmedtmann",
-  age: 2037 - 1991,
-  job: "teacher",
-  friends: ["Michael", "Peter", "Steven"],
+/*
+LECTURE: Introduction to Objects 
+
+1. Create an object called 'myCountry' for a country of your choice, containing properties 'country', 'capital', 'language', 'population' and 'neighbours' (an array like we used in previous assignments)  
+
+const myCountry = {
+  country: "Ukraine",
+  capital: "Kyiv",
+  language: "Ukrainian",
+  population: 42000000,
+  neighbours: [
+    "Poland",
+    "Slovakia",
+    "Hungary",
+    "Romania",
+    "Moldova",
+    "Orks",
+    "Semi-Orks",
+  ],
 };
+
+*/
