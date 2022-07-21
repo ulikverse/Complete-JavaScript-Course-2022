@@ -541,3 +541,43 @@ console.log(
   );
   
   */
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  birthYear: 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+  // caclAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  caclAge: function () {
+    // console.log(this);
+    return 2037 - this.birthYear;
+  },
+
+  caclAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.caclAge()}-year old ${
+      jonas.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's licence.`;
+  },
+};
+
+console.log(jonas.caclAge());
+
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+// Challenge
+// "Jonas is 46 years old teacher, and he has a driver's license"
+
+console.log(jonas.getSummary());
