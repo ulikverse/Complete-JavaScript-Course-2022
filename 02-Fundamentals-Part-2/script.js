@@ -836,7 +836,6 @@ arrays. Log a string like 'Neighbour: Canada' for each country
 
 3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't 
 worry if it's too difficult for you! But you can still try to figure this out anyway 😉
-*/
 
 const listOfNeighbours = [
   ["Canada", "Mexico"],
@@ -845,5 +844,7 @@ const listOfNeighbours = [
 ];
 
 for (let i = 0; i < listOfNeighbours.length; i++)
-  for (let y = 0; y < listOfNeighbours[i].length; y++)
-    console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+for (let y = 0; y < listOfNeighbours[i].length; y++)
+console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+
+*/
