@@ -703,7 +703,6 @@ for (let num = 1; num <= 50; num++) {
   console.log(`Voter number ${num} is currently voting`);
 }
 
-*/
 
 const jonas = [
   "Jonas",
@@ -725,10 +724,10 @@ const types = [];
 for (let i = 0; i < jonas.length; i++) {
   // Reading from jonas array
   console.log(jonas[i], typeof jonas[i]);
-
+  
   // Filling types array
   // types[i] = typeof jonas[i];
-
+  
   types.push(typeof jonas[i]);
 }
 
@@ -749,13 +748,15 @@ console.log(ages);
 console.log("--- ONLY STRINGS ---");
 for (let i = 0; i < jonas.length; i++) {
   if (typeof jonas[i] !== "string") continue;
-
+  
   console.log(jonas[i], typeof jonas[i]);
 }
 
 console.log("--- BREAK WITH NUMBER ---");
 for (let i = 0; i < jonas.length; i++) {
   if (typeof jonas[i] === "number") break;
-
+  
   console.log(jonas[i], typeof jonas[i]);
 }
+
+*/
