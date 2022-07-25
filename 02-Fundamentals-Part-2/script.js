@@ -877,7 +877,6 @@ LECTURE: The while Loop
 but this time using a while loop (call the array 'percentages3') 
 2. Reflect on what solution you like better for this task: the for loop or the while 
 loop?
-  */
 
 const percentages3 = [];
 
@@ -889,3 +888,4 @@ while (i < populations.length) {
 }
 
 console.log(percentages3);
+*/
