@@ -51,6 +51,37 @@ const restaurant = {
   },
 };
 
+const rest1 = {
+  name: 'Capri',
+  // numGuests: 20,
+  numGuests: 0,
+};
+
+const rest2 = {
+  name: 'La Piaza',
+  owner: 'Giovanni Rossi',
+};
+
+// OR assigment operator
+// rest1.numGuests = rest1.numGuests || 10;
+// rest2.numGuests = rest2.numGuests || 10;
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+// Nullish assigment operator (null or undefined)
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+// AND assigment operator
+// rest1.owner = rest1.owner && '<ANONIMOUS>';
+// rest2.owner = rest2.owner && '<ANONIMOUS>';
+rest1.owner &&= '<ANONIMOUS>';
+rest2.owner &&= '<ANONIMOUS>';
+
+console.log(rest1);
+console.log(rest2);
+
+/*
 restaurant.numberGuests = 0;
 const guests = restaurant.numberGuests || 10;
 console.log(guests);
@@ -58,6 +89,8 @@ console.log(guests);
 // Nullish: null and  undefined (NOT 0 or '')
 const guestCorrect = restaurant.numberGuests ?? 10;
 console.log(guestCorrect);
+
+*/
 
 /*
 console.log('----- OR -----');
