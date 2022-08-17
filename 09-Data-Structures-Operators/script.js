@@ -129,6 +129,7 @@ const game = {
   },
 };
 
+/*
 // 1. Create one player array for each team (variables 'players1' and 'players2')
 
 // const players1 = [...game.players[0]];
@@ -185,6 +186,7 @@ printGoals(...game.scored);
 team1 < team2 && console.log('Team 1 is more likely to win');
 team1 > team2 && console.log('Team 2 is more likely to win');
 
+*/
 /*
 // OR assigment operator
 // rest1.numGuests = rest1.numGuests || 10;
