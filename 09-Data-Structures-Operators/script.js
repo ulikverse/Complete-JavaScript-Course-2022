@@ -51,16 +51,26 @@ const restaurant = {
   },
 };
 
-const rest1 = {
-  name: 'Capri',
-  // numGuests: 20,
-  numGuests: 0,
-};
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 
-const rest2 = {
-  name: 'La Piaza',
-  owner: 'Giovanni Rossi',
-};
+for (const item of menu) console.log(item);
+
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+
+// console.log([...menu.entries()]);
+
+// const rest1 = {
+//   name: 'Capri',
+//   // numGuests: 20,
+//   numGuests: 0,
+// };
+
+// const rest2 = {
+//   name: 'La Piaza',
+//   owner: 'Giovanni Rossi',
+// };
 
 /*
 Data Structures, Modern Operators and Strings  
@@ -86,7 +96,6 @@ Test data for 6.: First, use players 'Davies', 'Muller', 'Lewandowski' and 'Kimm
  
 GOOD LUCK 😀 
  
-*/
 
 const game = {
   team1: 'Bayern Munich',
@@ -129,6 +138,7 @@ const game = {
   },
 };
 
+*/
 /*
 // 1. Create one player array for each team (variables 'players1' and 'players2')
 
