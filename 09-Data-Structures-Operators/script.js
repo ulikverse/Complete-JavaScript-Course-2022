@@ -4,22 +4,22 @@
 // const flights =
 //   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
-const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+// const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
-const openingHours = {
-  [weekdays[3]]: {
-    open: 12,
-    close: 22,
-  },
-  [weekdays[4]]: {
-    open: 11,
-    close: 23,
-  },
-  [weekdays[5]]: {
-    open: 0, // Open 24 hours
-    close: 24,
-  },
-};
+// const openingHours = {
+//   [weekdays[3]]: {
+//     open: 12,
+//     close: 22,
+//   },
+//   [weekdays[4]]: {
+//     open: 11,
+//     close: 23,
+//   },
+//   [weekdays[5]]: {
+//     open: 0, // Open 24 hours
+//     close: 24,
+//   },
+// };
 
 // Data needed for first part of the section
 const restaurant = {
@@ -30,7 +30,7 @@ const restaurant = {
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
   // ES6 enhanced object leterals
-  openingHours,
+  // openingHours,
 
   order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
@@ -50,6 +50,40 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+
+const ordersSets = new Set([
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza',
+]);
+
+console.log(ordersSets);
+
+console.log(new Set('Jonas'));
+
+console.log(ordersSets.size);
+console.log(ordersSets.has('Pizza'));
+console.log(ordersSets.has('Bread'));
+ordersSets.add('Garlic Bread');
+ordersSets.add('Garlic Bread');
+ordersSets.delete('Risotto');
+// ordersSets.clear();
+console.log(ordersSets);
+
+for (const order of ordersSets) console.log(order);
+
+// Example
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Waiter'];
+
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+console.log(new Set('Waiter', 'Chef', 'Waiter', 'Manager', 'Waiter').size);
+
+console.log(new Set('jonasschmedtmann'));
 
 /*
 Coding Challenge #2 
