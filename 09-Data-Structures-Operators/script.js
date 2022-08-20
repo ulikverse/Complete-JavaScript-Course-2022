@@ -60,6 +60,7 @@ const ordersSets = new Set([
   'Pizza',
 ]);
 
+/*
 console.log(ordersSets);
 
 console.log(new Set('Jonas'));
@@ -84,6 +85,7 @@ console.log(staffUnique);
 console.log(new Set('Waiter', 'Chef', 'Waiter', 'Manager', 'Waiter').size);
 
 console.log(new Set('jonasschmedtmann'));
+*/
 
 /*
 Coding Challenge #2 
@@ -112,7 +114,6 @@ Hint: Note how the odds and the game objects have the same property names 😉
 GOOD LUCK 😀
 */
 
-/*
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -154,6 +155,7 @@ const game = {
   },
 };
 
+/*
 // 1.
 // Loop over the game.scored array and print each player name to the console, along with the goal number (Example: "Goal 1: Lewandowski")
 
