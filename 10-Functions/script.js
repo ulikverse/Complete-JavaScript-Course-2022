@@ -427,3 +427,29 @@ const perGroup = 1000;
 boardPasengers(180, 3);
 
 */
+
+/*
+
+//// Closures
+//// Closures
+//// Closures
+//// Closures
+
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+
+const booker = secureBooking();
+
+booker();
+booker();
+booker();
+
+console.dir(booker);
+
+*/
