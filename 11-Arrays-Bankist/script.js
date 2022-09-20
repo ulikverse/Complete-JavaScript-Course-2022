@@ -110,6 +110,7 @@ console.log(accounts);
 //// The filter Method
 //// The filter Method
 //// The filter Method
+//// The filter Method
 
 const deposits = movements.filter(function (mov, i, arr) {
   return mov > 0;
