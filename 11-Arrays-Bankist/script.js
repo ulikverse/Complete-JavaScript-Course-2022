@@ -86,6 +86,12 @@ const displayMovements = function (movements) {
     containerMovements.insertAdjacentHTML('afterbegin', html);
   });
 };
+
+//// Computing Usernames
+//// Computing Usernames
+//// Computing Usernames
+//// Computing Usernames
+
 displayMovements(account1.movements);
 
 const createUsernames = function (accs) {
