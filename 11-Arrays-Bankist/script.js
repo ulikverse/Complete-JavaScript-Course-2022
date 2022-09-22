@@ -4,8 +4,6 @@
 /////////////////////////////////////////////////
 // BANKIST APP
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-
 // Data
 const account1 = {
   owner: 'Jonas Schmedtmann',
@@ -94,6 +92,12 @@ const displayMovements = function (movements) {
 
 displayMovements(account1.movements);
 
+const calcDisplayBalance = function (movements) {
+  const balance = movements.reduce((acc, mov) => acc + mov, 0);
+  labelBalance.textContent = `${balance} EUR`;
+};
+calcDisplayBalance(account1.movements);
+
 const createUsernames = function (accs) {
   accs.forEach(function (acc) {
     acc.username = acc.owner
@@ -105,25 +109,6 @@ const createUsernames = function (accs) {
 };
 
 createUsernames(accounts);
-console.log(accounts);
-
-//// The filter Method
-//// The filter Method
-//// The filter Method
-//// The filter Method
-
-const deposits = movements.filter(function (mov, i, arr) {
-  return mov > 0;
-});
-console.log(movements);
-console.log(deposits);
-
-const depositsFor = [];
-for (const mov of movements) if (mov > 0) depositsFor.push(mov);
-console.log(depositsFor);
-
-const withdrawals = movements.filter(mov => mov < 0);
-console.log(withdrawals);
 
 /*
 Working With Arrays  
@@ -193,6 +178,8 @@ checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 
@@ -342,3 +329,45 @@ const movementDescriptions = movements.map(
 console.log(movementDescriptions);
 
 */
+
+//// The filter Method
+//// The filter Method
+//// The filter Method
+//// The filter Method
+
+const deposits = movements.filter(function (mov, i, arr) {
+  return mov > 0;
+});
+// console.log(movements);
+// console.log(deposits);
+
+const depositsFor = [];
+for (const mov of movements) if (mov > 0) depositsFor.push(mov);
+// console.log(depositsFor);
+
+const withdrawals = movements.filter(mov => mov < 0);
+// console.log(withdrawals);
+
+console.log(movements);
+
+// Accumulator -> SNOWBALL
+// const balance = movements.reduce(function (acc, cur, i, arr) {
+//   console.log(`Iteration ${i}: ${acc}`);
+//   return acc + cur;
+// }, 0);
+
+const balance = movements.reduce((acc, cur) => acc + cur, 0);
+
+console.log(balance);
+
+let balance2 = 0;
+for (const mov of movements) balance2 += mov;
+console.log(balance2);
+
+// Maximum value of the movements arr
+
+const max = movements.reduce((acc, mov) => {
+  if (acc > mov) return acc;
+  else return mov;
+}, movements[0]);
+console.log(max);
