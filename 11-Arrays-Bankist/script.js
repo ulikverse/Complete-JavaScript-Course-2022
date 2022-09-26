@@ -98,6 +98,11 @@ const calcDisplayBalance = function (movements) {
 };
 calcDisplayBalance(account1.movements);
 
+//// The Magic of Chaining Methods
+//// The Magic of Chaining Methods
+//// The Magic of Chaining Methods
+//// The Magic of Chaining Methods
+
 const calcDisplaySummary = function (movements) {
   const incomes = movements
     .filter(mov => mov > 0)
