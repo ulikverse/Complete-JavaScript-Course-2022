@@ -118,7 +118,7 @@ const calcDisplaySummary = function (movements) {
     .filter(mov => mov > 0)
     .map(deposit => (deposit * 1.2) / 100)
     .filter((int, i, arr) => {
-      console.log(arr);
+      // console.log(arr);
       return int >= 1;
     })
     .reduce((acc, int) => acc + int, 0);
@@ -486,7 +486,7 @@ const calcAverageHumanAge2 = function (ages) {
   */
 
 const eurToUsd = 1.1;
-console.log(movements);
+// console.log(movements);
 
 // PIPELINE
 const totalDepositsUSD = movements
