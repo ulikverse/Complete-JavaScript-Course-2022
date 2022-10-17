@@ -153,6 +153,13 @@ btnScrollTo.addEventListener('click', function (e) {
   section1.scrollIntoView({ behavior: 'smooth' });
 });
 
+/*
+
+//// Event Propagation: Bubbling and Capturing
+//// Event Propagation: Bubbling and Capturing
+//// Event Propagation: Bubbling and Capturing
+//// Event Propagation: Bubbling and Capturing
+
 const h1 = document.querySelector('h1');
 
 const alertH1 = function (e) {
@@ -166,3 +173,38 @@ setTimeout(() => h1.removeEventListener('mouseenter', alertH1), 3000);
 // h1.onmouseenter = function (e) {
 //   alert('onmouseenter: Great! You are reading the heading :D');
 // };
+
+*/
+
+/*
+
+//// Event Propagation in Practice
+//// Event Propagation in Practice
+//// Event Propagation in Practice
+//// Event Propagation in Practice
+
+// rgb(255, 255, 255)
+const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1));
+const randomColor = () =>
+  `rgb(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)})`;
+
+document.querySelector('.nav__link').addEventListener('click', function (e) {
+  this.style.backgroundColor = randomColor();
+  console.log('LINK', e.target, e.currentTarget);
+  console.log(e.currentTarget === this);
+
+  // Stop propagation
+  // e.stopPropagation();
+});
+
+document.querySelector('.nav__links').addEventListener('click', function (e) {
+  this.style.backgroundColor = randomColor();
+  console.log('CONTAINER', e.target, e.currentTarget);
+});
+
+document.querySelector('.nav').addEventListener('click', function (e) {
+  this.style.backgroundColor = randomColor();
+  console.log('NAV', e.target, e.currentTarget);
+});
+
+*/
