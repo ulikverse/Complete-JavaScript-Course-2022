@@ -26,4 +26,27 @@ console.log(matilda, jack);
 const jay = 'Jay';
 
 console.log(jonas instanceof Person);
-console.log(jay instanceof Person);
+
+// Prototypes
+console.log(Person.prototype);
+
+Person.prototype.caclAge = function () {
+  console.log(2037 - this.birthYear);
+};
+
+jonas.caclAge();
+matilda.caclAge();
+
+console.log(jonas.__proto__);
+console.log(jonas.__proto__ === Person.prototype);
+
+console.log(Person.prototype.isPrototypeOf(jonas));
+console.log(Person.prototype.isPrototypeOf(Person));
+
+// .prototypeOfLinkedObjects
+
+Person.prototype.species = 'Homo sapiens';
+console.log(jonas.species, matilda.species);
+
+console.log(jonas.hasOwnProperty('firstName'));
+console.log(jonas.hasOwnProperty('species'));
