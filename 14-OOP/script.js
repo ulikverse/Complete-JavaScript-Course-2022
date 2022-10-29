@@ -1,6 +1,5 @@
 'use strict';
 
-/*
 const Person = function (firstName, birthYear) {
   // Instance properties
   this.firstName = firstName;
@@ -14,14 +13,12 @@ const Person = function (firstName, birthYear) {
 
 const jonas = new Person('Jonas', 1991);
 console.log(jonas);
-*/
 
 // 1. New empty object {} is created
 // 2. Function is called, this = {}
 // 3. {} linked to prototype
 // 4. Function automatically return {}
 
-/*
 const matilda = new Person('Matilda', 2017);
 const jack = new Person('Jack', 1975);
 console.log(matilda, jack);
@@ -30,6 +27,14 @@ const jay = 'Jay';
 
 console.log(jonas instanceof Person);
 
+Person.hey = function () {
+  console.log('Hey there 👋');
+  console.log(this);
+};
+
+Person.hey();
+
+/*
 // Prototypes
 console.log(Person.prototype);
 
@@ -131,6 +136,7 @@ class PersonCl {
     this.birthtYear = birthtYear;
   }
 
+  // Instance methods
   // Methods will be added to .prototype
   calcAge() {
     console.log(2037 - this.birthtYear);
@@ -153,6 +159,12 @@ class PersonCl {
   get fullName() {
     return this._fullName;
   }
+
+  // Static Method
+  static hey() {
+    console.log('Hey there 👋');
+    console.log(this);
+  }
 }
 
 const jessica = new PersonCl('Jessica Davies', 1996);
@@ -174,6 +186,9 @@ jessica.greet();
 
 const walter = new PersonCl('Walter White', 1965);
 
+PersonCl.hey();
+
+/*
 const acount = {
   owner: 'Jonas',
   movements: [200, 530, 120, 300],
@@ -191,3 +206,4 @@ console.log(acount.latest);
 
 acount.latest = 50;
 console.log(acount.movements);
+*/
