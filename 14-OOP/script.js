@@ -251,6 +251,7 @@ Test data:
 GOOD LUCK 😀
 */
 
+/*
 class CarCl {
   constructor(make, speed) {
     this.make = make;
@@ -283,3 +284,4 @@ ford.accelerate();
 ford.brake();
 ford.speedUS = 50;
 console.log(ford);
+*/
