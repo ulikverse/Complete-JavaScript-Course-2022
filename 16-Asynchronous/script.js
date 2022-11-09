@@ -290,6 +290,7 @@ whereAmI(-33.933, 18.474);
 
 */
 
+/*
 console.log('Test start'); // 1
 setTimeout(() => console.log('0 sec timer'), 0); // 4
 Promise.resolve('Resolved promise 1').then(res => console.log(res)); // 3
@@ -299,3 +300,5 @@ Promise.resolve('Resovled promise 2').then(res => {
 });
 
 console.log('Test end'); // 2
+
+*/
