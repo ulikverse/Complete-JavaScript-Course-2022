@@ -371,6 +371,7 @@ const whereAmI = function () {
   getPosition()
     .then(pos => {
       const { latitude: lat, longtitude: lng } = pos.coords;
+
       return fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`);
     })
     .then(res => {
@@ -476,3 +477,34 @@ createImage('img/img-1.jpg')
   })
   .catch(err => console.error(err));
 */
+
+const getPosition = function () {
+  return new Promise(function (resolve, reject) {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  });
+};
+
+const whereAmI = async function () {
+  // Geolocation
+  const pos = await getPosition();
+  const { latitude: lat, longtitude: lng } = pos.coords;
+
+  // Reverse geocoding
+  const resGeo = await fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`);
+  const dataGeo = await resGeo.json();
+  console.log(dataGeo);
+
+  // Country data
+  // fetch(`https://restcountries.com/v2/name/${country}`).then(res =>
+  //   console.log(res)
+  // );
+
+  const res = await fetch(
+    `https://restcountries.com/v2/name/${dataGeo.country}`
+  );
+  const data = await res.json();
+  console.log(data);
+  renderCountry(data[0]);
+};
+whereAmI();
+console.log('FIRST');
