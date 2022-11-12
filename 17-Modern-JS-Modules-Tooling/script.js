@@ -84,4 +84,6 @@ export.addToCart = function (product, quantity) {
 
 // Import
 const { addToCart } = require('./shoppingCart.js')
+// Just a random comment
+//another one
 */
