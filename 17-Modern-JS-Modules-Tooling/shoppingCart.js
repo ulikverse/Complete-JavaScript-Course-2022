@@ -1,5 +1,5 @@
 // Exporting module
-/*
+
 console.log('Exporting module');
 
 // Blocking code
@@ -25,4 +25,3 @@ export default function (product, quantity) {
   cart.push({ product, quantity });
   console.log(`${quantity} ${product} was added to cart`);
 }
-*/
