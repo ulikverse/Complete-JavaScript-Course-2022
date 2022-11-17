@@ -10,11 +10,11 @@ export default class View {
     this._data = data;
     const markup = this._generateMarkup();
     this._clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._parentEl.insertAdjacentHTML('afterbegin', markup);
   }
 
   _clear() {
-    this._parentElement.innerHTML = '';
+    this._parentEl.innerHTML = '';
   }
 
   renderSpinner() {
@@ -26,7 +26,7 @@ export default class View {
           </div>
     `;
     this._clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._parentEl.insertAdjacentHTML('afterbegin', markup);
   }
 
   renderError(message = this._errorMessage) {
@@ -41,7 +41,7 @@ export default class View {
       </div>
     `;
     this._clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._parentEl.insertAdjacentHTML('afterbegin', markup);
   }
 
   renderMessage(message = this._message) {
@@ -56,6 +56,6 @@ export default class View {
       </div>
     `;
     this._clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._parentEl.insertAdjacentHTML('afterbegin', markup);
   }
 }
