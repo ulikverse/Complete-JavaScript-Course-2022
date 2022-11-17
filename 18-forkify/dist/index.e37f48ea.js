@@ -584,6 +584,10 @@ const controlPagination = function(goToPage) {
     // 2) Render NEW pagination buttons
     (0, _paginationViewJsDefault.default).render(_modelJs.state.search);
 };
+const controlServings = function() {
+// Update the recipe servings (in state)
+// Update the the recipe view
+};
 const init = function() {
     (0, _recipeViewJsDefault.default).addHendlerRender(controlRecipes);
     (0, _searchViewJsDefault.default).addHandlerSearch(controlSearchResults);
