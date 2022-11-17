@@ -2420,7 +2420,7 @@ const loadRecipe = async function(id) {
         state.recipe = {
             id: recipe.id,
             title: recipe.title,
-            published: recipe.publisher,
+            publisher: recipe.publisher,
             sourceUrl: recipe.source_url,
             image: recipe.image_url,
             servings: recipe.servings,
@@ -2443,7 +2443,7 @@ const loadSearchResults = async function(query) {
             return {
                 id: rec.id,
                 title: rec.title,
-                published: rec.publisher,
+                publisher: rec.publisher,
                 image: rec.image_url
             };
         });
@@ -2984,7 +2984,7 @@ class ResultsView extends (0, _viewJsDefault.default) {
     _errorMessage = "No recepies found for your query! Please try again :D";
     _message = "";
     _generateMarkup() {
-        console.log(this._data);
+        // console.log(this._data);
         return this._data.map(this._generateMarkupPreview).join("");
     }
     _generateMarkupPreview(result) {
