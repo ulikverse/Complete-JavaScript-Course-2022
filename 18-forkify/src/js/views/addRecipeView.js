@@ -2,13 +2,13 @@ import View from './View.js';
 import icons from 'url:../../img/icons.svg'; // Parcel 2
 
 class AddRecipeView extends View {
-  _parentEl = document.querySelector('.upload');
-  _message = 'Recipe was seccesfully uploaded :)';
+  _parentElement = document.querySelector('.upload');
+  _message = 'Recipe was successfully uploaded :)';
 
   _window = document.querySelector('.add-recipe-window');
   _overlay = document.querySelector('.overlay');
-  _bntOpen = document.querySelector('.nav__btn--add-recipe');
-  _bntClose = document.querySelector('.btn--close-modal');
+  _btnOpen = document.querySelector('.nav__btn--add-recipe');
+  _btnClose = document.querySelector('.btn--close-modal');
 
   constructor() {
     super();
@@ -22,19 +22,19 @@ class AddRecipeView extends View {
   }
 
   _addHandlerShowWindow() {
-    this._bntOpen.addEventListener('click', this.toggleWindow.bind(this));
+    this._btnOpen.addEventListener('click', this.toggleWindow.bind(this));
   }
 
   _addHandlerHideWindow() {
-    this._bntClose.addEventListener('click', this.toggleWindow.bind(this));
+    this._btnClose.addEventListener('click', this.toggleWindow.bind(this));
     this._overlay.addEventListener('click', this.toggleWindow.bind(this));
   }
 
   addHandlerUpload(handler) {
-    this._parentEl.addEventListener('submit', function (e) {
+    this._parentElement.addEventListener('submit', function (e) {
       e.preventDefault();
-      const dataArray = [...new FormData(this)];
-      const data = Object.fromEntries(dataArray);
+      const dataArr = [...new FormData(this)];
+      const data = Object.fromEntries(dataArr);
       handler(data);
     });
   }
