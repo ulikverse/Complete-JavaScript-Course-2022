@@ -21335,7 +21335,15 @@ var _iconsSvg = require("url:../../img/icons.svg"); // Parcel 2
 var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 class View {
     _data;
-    render(data, render = true) {
+    /**
+   * Render the recieved object to the DOM
+   * @param {Object | Object[]} data The data to be rendered
+   * @param {boolean} [render=true] If false => create markups string insted of rendering to the DOM
+   * @returns {undefined | string} A markup string is returned if render is false
+   * @this {Object} View instance
+   * @author Ulik Shtel
+   * @todo Finish the implementation
+   */ render(data, render = true) {
         this._data = data;
         const markup = this._generateMarkup();
         if (!render) return markup;
